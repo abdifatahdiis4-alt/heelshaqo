@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^job/([a-zA-Z0-9-]+)$ public/job-details.php?slug=$1 [L,QSA]
+RewriteRule ^org/([a-zA-Z0-9-]+)$ public/organisation.php?slug=$1 [L,QSA]
+RewriteRule ^category/([a-zA-Z0-9-]+)$ public/category.php?slug=$1 [L,QSA]
+RewriteRule ^about$ static/about.php [L]
+RewriteRule ^contact$ static/contact.php [L]
+RewriteRule ^terms$ static/terms.php [L]
+RewriteRule ^privacy$ static/privacy.php [L]
+RewriteRule ^jobs$ public/jobs.php [L]
+RewriteRule ^search$ public/search.php [L]
+RewriteRule ^admin$ admin/index.php [L]
+RewriteRule ^marketplace$ public/marketplace.php [L]
